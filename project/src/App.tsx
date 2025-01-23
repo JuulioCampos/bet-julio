@@ -32,7 +32,7 @@ function App() {
   };
 
   const addBet = (matchId: number, selection: 'home' | 'draw' | 'away', odds: number) => {
-    if (!user) {
+    if (!user || true) {
       setAuthModal({ isOpen: true, type: 'login' });
       return;
     }
